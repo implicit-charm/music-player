@@ -1,0 +1,16 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "git@github.com:implicit-charm/music-player.git",
+  "author": "implicit-charm <chengyongliu@foxmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev":"node --watch index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.4",
+    "hono": "^4.7.11"
+  }
+}
