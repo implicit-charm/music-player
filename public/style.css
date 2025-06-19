@@ -48,21 +48,20 @@ body {
   position: absolute;
 }
 
-.audio-name,
-.audio-author {
+#audio-info {
   position: absolute;
   left: 50%;
+  bottom: 2%;
   transform: translateX(-50%);
   font-weight: bold;
   color: #00b8db;
+  text-align: center;
 }
 .audio-name {
-  bottom: 10%;
   font-size: 24px;
 }
 
 .audio-author {
-  bottom: 5%;
   font-size: 16px;
 }
 
@@ -184,4 +183,40 @@ body {
 
 .audio-list-item.active .audio-list-author {
   color: #e0e0e0; /* 当前播放歌曲的作者文字颜色 */
+}
+
+.lyrics-container {
+  flex-grow: 1; /* Allows it to take available space */
+  overflow-y: auto; /* Enable scrolling for long lyrics */
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  height: 300px; /* Adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center lyrics vertically */
+}
+
+.lyrics-container ul {
+  list-style: none;
+  padding: 0;
+  margin: auto; /* Center list horizontally */
+}
+
+.lyric-line {
+  padding: 8px 0;
+  font-size: 1.1em;
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+}
+
+.lyric-line.active-lyric {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3em;
+  transform: scale(1.05);
 }

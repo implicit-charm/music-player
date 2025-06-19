@@ -22,6 +22,6 @@ You should see Server running on http://localhost:3000
 - [x] 播放/暂停
 - [x] 重新播放
 - [x] 进度条跳转
-- [ ] 歌词展示
+- [x] 歌词展示
 
 ![](./202506178.png)
